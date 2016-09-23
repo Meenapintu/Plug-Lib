@@ -27,33 +27,18 @@ int main()
 {
 
     list<string> ml =list<string>() ;//= list<int>();
-
     ml.insert("hi thee");
     ml.insert("del");
-     ml.insert("hi hgf");
-     ml.name("ML");
+    ml.insert("hi hgf");
 
-     list<string>gl = list<string>(ml);
-        gl.name("GL");
-     //  debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-       gl.remove();
-       gl.remove();
-       ml.remove();
-    ml.~list();
-       //debug("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-   /** ml.insert(4);
-    ml.insert(5);
-    ml.insert(2);**/
-    //ml.remove("del");
-    // ml.remove("del");
-      ml.remove();
-       ml.remove();
-        ml.remove();
-  gl.remove();
-   // ml.display();
-   // ml.display();
-
+    list<string>gl = list<string>(ml);
     gl.display();
-	return 0;
+    gl.remove();
+    gl.remove();
+    ml.remove();
+    ml.~list();
+    gl.remove();
+    gl.display();
+    return 0;
 }
 
