@@ -3,10 +3,9 @@
 #include<iostream>
 
 using namespace std;
-void debug(string str)
-{
-    std::cout<<str<<'\n';
-}
+
+ void debug(string str);
+
 
 template<class Type>
 struct Node
@@ -79,6 +78,5 @@ class list
     private:
 
 };
-
 
 #endif // LIST_H

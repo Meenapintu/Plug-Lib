@@ -2,7 +2,8 @@
 CC = g++
 
 #CC = x86_64-w64-mingw32-g++
-STD11 = -std=c++11  -static -g
+STD11 = -std=c++11
+# -static -g
 
 IDIR = include
 SDIR = src

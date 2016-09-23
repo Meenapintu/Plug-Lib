@@ -1,6 +1,10 @@
 #include "../include/list.h"
 
 
+ void debug(string str)
+{
+    std::cout<<str<<'\n';
+}
 
 template<class Type>
 inline Node<Type>::Node(Type value)
