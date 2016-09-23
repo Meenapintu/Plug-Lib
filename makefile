@@ -14,21 +14,20 @@ BDIR =bin
 
 
 
-all: tree list heap
+all: list.exe
 
-$(ODIR)/main.o: main.cc $(IDIR)/list.h
-	$(CC) $(STD11) -c  $@ $<
+$(ODIR)/%.o: main.cc $(IDIR)/list.h
+	$(CC) $(STD11) -c  $<  -o $@
 
-$(ODIR)/list.o: $(SDIR)/list.cpp $(IDIR)/list.h
-	$(CC) $(STD11) -c  $@ $<
 
-list.exe: $(ODIR)/list.o  $(ODIR)/main.o
-	$(CC) $(STD11) -o $@ $^
+
+list.exe:  $(ODIR)/main.o
+	$(CC) $(STD11) -o $@ $<
 
 .phony: clean
 
 clean:
-	rm -rf obj/*
+	rm -rf *.exe  $(ODIR)/*
 
 
 

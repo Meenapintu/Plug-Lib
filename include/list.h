@@ -79,4 +79,6 @@ class list
 
 };
 
+#include "../src/list.cpp"
+
 #endif // LIST_H
