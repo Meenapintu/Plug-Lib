@@ -14,14 +14,14 @@ BDIR =bin
 
 
 
-all: list.exe
+all: $(BDIR)/list.exe
 
 $(ODIR)/%.o: main.cc $(IDIR)/list.h
 	$(CC) $(STD11) -c  $<  -o $@
 
 
 
-list.exe:  $(ODIR)/main.o
+$(BDIR)/list.exe:  $(ODIR)/main.o
 	$(CC) $(STD11) -o $@ $<
 
 .phony: clean

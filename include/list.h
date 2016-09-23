@@ -31,9 +31,7 @@ public:
     inline Node(const Node* node)
     {
         this->m_value=node->value();
-        debug("ERROR");
         this->m_next=node->next();
-        debug("ERROR");
     }
 };
 
@@ -91,7 +89,7 @@ public:
 protected:
     Node<Type>* m_head;
     Node<Type>* m_temp;
-    node<Type>* m_back;
+
     int m_length;
 
 private:

@@ -56,7 +56,7 @@ list<Type>::list(const list& other)
 template <class Type>
 list<Type>& list<Type>::operator=(const list& rhs)
 {
-    debug("list operator called ");
+
     if (this == &rhs) return *this; // handle self assignment
     //assignment operator
     return *this;

@@ -26,12 +26,12 @@
 int main()
 {
 
-    list<string> ml =list<string>() ;//= list<int>();
-    ml.insert("hi thee");
-    ml.insert("del");
-    ml.insert("hi hgf");
+    list<int> ml =list<int>() ;//= list<int>();
+    ml.insert(2);
+    ml.insert(3);
+    ml.insert(4);
 
-    list<string>gl = list<string>(ml);
+    list<int>gl = list<int>(ml);
     gl.display();
     gl.remove();
     gl.remove();
