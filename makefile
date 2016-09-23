@@ -15,7 +15,7 @@ BDIR =bin
 
 all: tree list heap
 
-$(ODIR)/main.o: %.cc $(IDIR)/list.h
+$(ODIR)/main.o: main.cc $(IDIR)/list.h
 	$(CC) $(STD11) -c  $@ $<
 
 $(ODIR)/list.o: $(SDIR)/list.cpp $(IDIR)/list.h
