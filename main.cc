@@ -4,24 +4,15 @@
  * Copyright 2016 PintuLalM <PintuLalM@DESKTOP-63TR384>
  */
 
-#include "include/list.h"
-
+#include <iostream>
+#include "include/List.h"
+using namespace std;
 int main()
 {
 
-    list<int> ml =list<int>() ;//= list<int>();
-    ml.insert(2);
-    ml.insert(3);
-    ml.insert(4);
-
-    list<int>gl = list<int>(ml);
-    gl.display();
-    gl.remove();
-    gl.remove();
-    ml.remove();
-    ml.~list();
-    gl.remove();
-    gl.display();
+    List<int> l = List<int>();
+    l.insert(l.begin(),5);
+    cout<<l.getsize()<<endl;
     return 0;
 }
 

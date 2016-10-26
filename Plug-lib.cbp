@@ -34,10 +34,17 @@
 			<Add option="-std=c++11" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/List.h" />
+		<Unit filename="include/Node.h" />
+		<Unit filename="include/const_iterator.h" />
+		<Unit filename="include/iterator.h" />
 		<Unit filename="include/list.h" />
+		<Unit filename="include/plug_list.h" />
 		<Unit filename="main.cc" />
 		<Unit filename="makefile" />
+		<Unit filename="src/List.cpp" />
 		<Unit filename="src/list.cpp" />
+		<Unit filename="src/plug_list.cpp" />
 		<Unit filename="version.h" />
 		<Extensions>
 			<code_completion />

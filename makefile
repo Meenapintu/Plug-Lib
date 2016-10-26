@@ -16,7 +16,7 @@ BDIR =bin
 
 all: $(BDIR)/list.exe
 
-$(ODIR)/%.o: main.cc $(IDIR)/list.h
+$(ODIR)/%.o: main.cc $(IDIR)/List.h
 	$(CC) $(STD11) -c  $<  -o $@
 
 
